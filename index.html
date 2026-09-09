@@ -1,7 +1,39 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <h1>안녕하세요, 제 홈페이지입니다</h1>
-  <p>GitHub Pages로 만들었습니다!</p>
-</body>
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="이지원의 개인 홈페이지" />
+    <title>이지원 | 개인 홈페이지</title>
+    <style>
+      :root { --ink: #172033; --muted: #647089; --accent: #5866d6; --soft: #eef0ff; --surface: rgba(255, 255, 255, .88); }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; color: var(--ink); font-family: Pretendard, "Noto Sans KR", system-ui, sans-serif; background: radial-gradient(circle at 88% 8%, #dbe4ff 0, transparent 28rem), linear-gradient(145deg, #f8f9ff, #f4f6fb); }
+      main { width: min(100% - 40px, 760px); margin: 0 auto; padding: 88px 0 64px; }
+      .intro { padding: clamp(32px, 7vw, 64px); border: 1px solid rgba(88, 102, 214, .14); border-radius: 28px; background: var(--surface); box-shadow: 0 18px 50px rgba(33, 47, 92, .1); }
+      .label { display: inline-block; margin: 0 0 18px; padding: 7px 12px; border-radius: 999px; color: #3946aa; font-size: .88rem; font-weight: 700; background: var(--soft); }
+      h1 { margin: 0; font-size: clamp(2.5rem, 8vw, 4.8rem); letter-spacing: -.07em; line-height: 1.08; }
+      .greeting { margin: 20px 0 0; color: var(--muted); font-size: clamp(1.05rem, 2.8vw, 1.25rem); line-height: 1.75; }
+      .details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 38px 0 0; }
+      .card { padding: 22px; border-radius: 18px; background: #fff; }
+      .card h2 { margin: 0 0 8px; color: var(--muted); font-size: .85rem; font-weight: 700; }
+      .card p { margin: 0; font-size: 1.08rem; font-weight: 700; }
+      footer { margin-top: 28px; color: var(--muted); font-size: .9rem; text-align: center; }
+      @media (max-width: 520px) { main { width: min(100% - 28px, 760px); padding-top: 42px; } .intro { border-radius: 22px; } .details { grid-template-columns: 1fr; margin-top: 28px; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="intro" aria-labelledby="name">
+        <p class="label">PERSONAL WEBSITE</p>
+        <h1 id="name">이지원</h1>
+        <p class="greeting">안녕하세요! 저의 작은 공간에 방문해 주셔서 반가워요.</p>
+        <div class="details">
+          <article class="card"><h2>소개</h2><p>첨단융합학부 26학번 · 07년생</p></article>
+          <article class="card"><h2>좋아하는 것</h2><p>음악 🎵</p></article>
+        </div>
+      </section>
+      <footer>© 2026 이지원</footer>
+    </main>
+  </body>
 </html>
